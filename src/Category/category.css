@@ -1,0 +1,60 @@
+.Livesection{
+    background: #ffffff;
+    margin-top: 2rem;
+}
+.heading{
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.i2-name{
+    color: rgb(50, 50, 50);
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ebebeb;
+    border:1px solid rgb(102, 102, 102);
+    width: 100%;
+    padding-top: 0.3rem;
+}
+.contents{
+    height: 21rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 0%;
+}
+.cards{
+    height: 21rem;
+    width: 14rem;
+    display: flex;
+    border-radius: 0%;
+    align-items: center;
+    background: white;
+}
+
+.cards>a{
+    text-decoration: none;
+}
+.itemname {
+    width: 14rem;
+    height: 2rem;
+    color: black;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+.Categoryimg{
+    overflow: hidden;
+}
+.Categoryimg>img{
+    width: 14rem;
+    height: 18rem;
+    transition: all 0.5s ease-in-out;
+    object-fit: cover;
+}
+.Categoryimg>img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}

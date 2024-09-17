@@ -1,0 +1,93 @@
+.BestSeller{
+    background: #ffffff;
+    margin-top: 2rem;
+    height: 40rem;
+}
+.heading{
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.i2-name{
+    color: rgb(50, 50, 50);
+    font-size: 1.5rem;
+    padding-top: 0.3rem;
+}
+.BestSellercontents{
+    height: 35rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 0%;
+}
+.BestSellercards{
+    height: 30rem;
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0%;
+    align-items: center;
+    /* border: 1px solid black; */
+    background: #f6f6f3;
+    /* overflow: hidden; */
+}
+
+.itemDetails{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    justify-content:space-evenly;
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 100%;
+}
+.ItemInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    gap: 1rem;
+    /* border: 1px solid red; */
+}
+
+.BestSellercards>a{
+    text-decoration: none;
+}
+.BestSelleritemname {
+    /* border: 1px solid black; */
+    width: 10rem;
+    padding: 0%;
+    min-height: 2rem;
+    overflow: hidden;
+    font-size:medium;
+}
+.BestSelleritemInfo {
+    /* border: 1px solid black; */
+    width: 10rem;
+    min-height: 2rem;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+}
+
+.BestSellerimg{
+    overflow: hidden;
+}
+.BestSellerimg>img{
+    width: 22rem;
+    height: 20rem;
+    transition: all 0.5s ease-in-out;
+    object-fit: cover;
+}
+.BestSellerimg>img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.BestSellerprice{
+    /* border: 1px solid black; */
+    width: 7.5rem;
+    color: black;
+    font-size:medium;
+    display: flex;
+    justify-content: center;
+}

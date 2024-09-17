@@ -1,0 +1,72 @@
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+ }
+ .search-box> form> button{
+   padding: 1px;
+ }
+ .search-box> form> button> img{
+   width: 40px;
+   height: 36px;
+   padding: 0%;
+ }
+ .search-box > :nth-child(3) {
+   width: 40px;
+   height: 35px;
+ }
+ .search-box > :nth-child(4) {
+   width: 40px;
+   height: 35px;
+ }
+ .search-box form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f5f5f5; */
+    /* border-radius: 5px; */
+    /* padding: 5px; */
+    margin-top: 1px;
+ }
+ 
+ .search-box form input[type="text"] {
+    border: none;
+    padding: 10px;
+    width: 400px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000;
+    border: 1px solid black;
+ }
+ 
+ .search-box form button[type="submit"] {
+    background-color: #393939;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+ }
+ 
+ .search-box form button[type="submit"]:hover {
+    background-color: #393939;
+ }
+ .n-button3 > :nth-child(1) {
+   width: 40px;
+   height: 35px;
+ }
+ .n-button4 > :nth-child(1) {
+   width: 40px;
+   height: 35px;
+ }
+
+.n-button3{
+   background:transparent ;
+   cursor: pointer;
+   border: none;
+}
+.n-button4{
+   background:transparent ;
+   cursor: pointer;
+   border: none;
+}

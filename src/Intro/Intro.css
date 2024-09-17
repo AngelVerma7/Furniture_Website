@@ -1,0 +1,91 @@
+.part1{
+  background-image:url(../img/BannerThree.jpg);
+  background-size:cover;
+}
+.Intro {
+ /* background-image:url("../img/bannerstart.jpeg");
+  background-image: auto;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  display: flex;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* left side styling */
+.i-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+.i-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+.i-name > :nth-child(1) {
+  color: white;
+  font-family: 'Cormorant';
+  font-style: italic;
+  font-weight: bold;
+  font-size: 5rem;
+}
+.i-name > :nth-child(2) {
+  color: white;
+  font-family: 'Cormorant';
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.i-button {
+  width: 10rem;
+  height: 3rem;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+.body3{
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 2px;
+}
+.container3{
+  display: flex;
+  width: 25vw;
+  height: 60vh;
+  background: #ffffff;
+  flex-direction: column;
+  padding: 8px;
+}
+.imgs{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.one{
+  width: 9rem;
+  height: 9rem;
+}
+.one > img{
+  width: 6rem;
+  height: 6rem;
+}
+.one :nth-child(2){
+  text-decoration: none;
+  color: black;
+}
+.container3 > a{
+  text-decoration:none;
+  color: rgb(23, 23, 23);
+  margin-left: 10px;
+  font-size: larger;
+}
