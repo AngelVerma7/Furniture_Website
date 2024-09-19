@@ -4,6 +4,7 @@ import '../Navbar/topheader.css';
 import {Link } from "react-router-dom";
 import React, { Component } from 'react'
 import user from "../img/User.png"
+import Logo from "../img/Ecomm-Logo.jpg"
 import cart from "../img/cart.png"
 
 export default class Navbar extends Component {
@@ -13,7 +14,7 @@ export default class Navbar extends Component {
     <div className="n-wrapper" id="Navbar">
        {/* left */}
        <div className="n-left">
-         <Link to="/Home"><div className="n-name"><button>XYZ</button></div></Link>
+         <Link to="/Home"><div className="n-name"><button><img src={Logo} alt="" /></button></div></Link>
          <div className="n-list">
            <ul style={{ listStyleType: "none" }}>
            <li className="dropdown">

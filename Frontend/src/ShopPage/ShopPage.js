@@ -6,7 +6,7 @@ export default function ShopPage() {
   const [category, setCategory] = useState("");
   const [color, setColor] = useState("");
   const [material, setMaterial] = useState("");
-  const [priceRange, setPriceRange] = useState([0, 3000]);
+  const [priceRange, setPriceRange] = useState([100, 3000]);
 
   const products = [
     { name: "Marble Coffee Table", price: 1400, category: "table", color: "white", material: "marble", image: 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-79.jpg' },
@@ -60,7 +60,7 @@ export default function ShopPage() {
         </div>
 
         <div className="filter">
-          <label htmlFor="priceRange">Price Range: ${priceRange[0]} - ${priceRange[1]}</label>
+          <label htmlFor="priceRange">Price Range: ₹{priceRange[0]} - ₹{priceRange[1]}</label>
           <input
             type="range"
             id="priceRange"

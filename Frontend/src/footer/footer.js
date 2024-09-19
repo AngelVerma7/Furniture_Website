@@ -8,9 +8,9 @@ export default class footer extends Component {
         <footer>
         <div className='body'>
             <div className='box1'>
-                <h1>About XYZ</h1>
+            <h1>About Vishwakarma</h1>
                 <div className='breakline'></div>
-                <p>Situated at the intersection of historical beauty and contemporary excitement, XYZ stands as the driving force and curator of the world’s most extraordinary designs from the 20th century onward.</p>
+                <p>Situated at the intersection of historical beauty and contemporary excitement, Vishwakarma stands as the driving force and curator of the world’s most extraordinary designs from the 20th century onward.</p>
             </div>
             <div className='box2'>
                 <h1>Meet Us</h1>
