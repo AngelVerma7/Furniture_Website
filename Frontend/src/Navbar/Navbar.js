@@ -23,15 +23,13 @@ export default class Navbar extends Component {
                  <a href="/#">Sofas</a>
                  <a href="/#">Chairs</a>
                  <a href="/#">Tables</a>
-                 <a href="/#">Storage</a>
                </div></li>
              <li className="dropdown">
               <a href="/#">Dinning Room</a>
              <div className="dropdown-content">
-                 <a href="/#">Stools</a>
                  <a href="/#">Chairs</a>
-                 <a href="/#">Dinning Table</a>
-                 <a href="/#">Benches</a>
+                 <a href="/#">Temple</a>
+                 <a href="/#">TV Stand</a>
                </div></li>
                <li className="dropdown">
               <a href="/#">Bedroom</a>

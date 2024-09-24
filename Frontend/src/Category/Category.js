@@ -1,6 +1,12 @@
 import React,{Component} from 'react'
 import "../Category/category.css"
 import Card from "./card";
+import Chair from "../img/TVstand.jpg"
+import Bad from "../img/Bad.jpg"
+import Sofa from "../img/sofa.jpg"
+import Kitchen from "../img/kitchen.jpg"
+import Temple from "../img/temple.jpg"
+import Cupboard from "../img/cupboard2.jpg"
 
 
 export default class Category extends Component {
@@ -12,12 +18,12 @@ export default class Category extends Component {
                 <div className="i2-name">Popular categories</div>
             </div>
             <div className="contents">
-            <Card itemimg= 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/GettyImages-1475799633-600x740.jpg' itemname="Chairs"/> 
-            <Card itemimg= 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/GettyImages-1395945512-600x740.jpg' itemname="Tables"/> 
-            <Card itemimg= 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/GettyImages-1854912433-600x740.jpg' itemname="Sofas"/> 
-            <Card itemimg= 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/GettyImages-1490349783-600x740.jpg' itemname="Storage"/> 
-            <Card itemimg= 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/GettyImages-1716610022-300x370.jpg' itemname="Beds"/> 
-            <Card itemimg= 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/GettyImages-1936674560-300x370.jpg' itemname="Lamps"/> 
+            <Card itemimg= {Chair} itemname="TV Stand"/> 
+            <Card itemimg= {Kitchen} itemname="Kitchen"/> 
+            <Card itemimg= {Sofa} itemname="Sofas"/> 
+            <Card itemimg= {Cupboard} itemname="CupbBard"/> 
+            <Card itemimg= {Bad} itemname="Beds"/> 
+            <Card itemimg= {Temple} itemname="Temple"/> 
             </div>
     </div>
     </>

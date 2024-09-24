@@ -12,6 +12,8 @@ export default function ShopPage() {
     { name: "Marble Coffee Table", price: 1400, category: "table", color: "white", material: "marble", image: 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-79.jpg' },
     { name: "Loren Dinning Chair", price: 550, category: "chair", color: "brown", material: "fabric", image: 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-89.jpg' },
     { name: "Miruna Floor Lamp", price: 1250, category: "lamp", color: "clear", material: "metal", image: 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-4.jpg' },
+    { name: "Marble Coffee Table", price: 1400, category: "table", color: "white", material: "marble", image: 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-79.jpg' },
+    { name: "Marble Coffee Table", price: 1400, category: "table", color: "white", material: "marble", image: 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-79.jpg' },
     // Add more products
   ];
 

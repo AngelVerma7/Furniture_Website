@@ -1,6 +1,10 @@
 import React from 'react'
 import "../Best Seller/BestSeller.css"
 import BestSellerCard from './BestSellerCard'
+import Cupboard from "../img/cupboard3.jpg"
+import TVStand from "../img/TVstand3.jpg"
+import Kitchen from "../img/kitchen2.jpg"
+import Door from "../img/door.jpg"
 
 export default function BestSeller() {
   return (
@@ -10,10 +14,10 @@ export default function BestSeller() {
                 <div className="i2-name">Best Seller</div>
             </div>
             <div className="BestSellercontents">
-            <BestSellerCard itemimg= 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-79.jpg' itemname="Marble Coffee Table" itemInfo="Solid in Construction,Simple in form" itemprice="1200"/> 
-            <BestSellerCard itemimg= 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-89.jpg' itemname="Loren Dinning Chair" itemInfo="Solid in Construction,Simple in form" itemprice="550"/> 
-            <BestSellerCard itemimg= 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-69.jpg' itemname="Sana Dinning Table" itemInfo="Solid in Construction,Simple in form" itemprice="1800"/> 
-            <BestSellerCard itemimg= 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-56.jpg' itemname="Sari Upholstered Bed with Storage" itemInfo="Solid in Construction,Simple in form" itemprice="1200"/> 
+            <BestSellerCard itemimg= {Cupboard} itemname="Wooden Wardrobe" itemInfo="Solid in Construction,Simple in form" itemprice="8000"/> 
+            <BestSellerCard itemimg= {TVStand} itemname="Wooden TV Stand" itemInfo="Solid in Construction,Simple in form" itemprice="7500"/> 
+            <BestSellerCard itemimg= {Kitchen} itemname="Kitchen Interior" itemInfo="Solid in Construction,Simple in form" itemprice="15000"/> 
+            <BestSellerCard itemimg= {Door} itemname="Wooden Door Design" itemInfo="Solid in Construction,Simple in form" itemprice="8000"/> 
             </div>
     </div>
     </>

@@ -46,9 +46,9 @@
   }
   
 .Product-grid{
-    height: 35rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content:flex-start;
     gap: 10px;
     padding: 0%;
