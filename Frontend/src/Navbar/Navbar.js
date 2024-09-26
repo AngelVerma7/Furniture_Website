@@ -18,38 +18,38 @@ export default class Navbar extends Component {
          <div className="n-list">
            <ul style={{ listStyleType: "none" }}>
            <li className="dropdown">
-              <a href="/#">Living Room</a>
+           <Link to="/ShopPage">Living Room</Link>
              <div className="dropdown-content">
-                 <a href="/#">Sofas</a>
-                 <a href="/#">Chairs</a>
-                 <a href="/#">Tables</a>
+             <Link to="/ShopPage">Sofas</Link>
+             <Link to="/ShopPage">Chairs</Link>
+             <Link to="/ShopPage">Tables</Link>
                </div></li>
              <li className="dropdown">
-              <a href="/#">Dinning Room</a>
+             <Link to="/ShopPage">Dinning Room</Link>
              <div className="dropdown-content">
-                 <a href="/#">Chairs</a>
-                 <a href="/#">Temple</a>
-                 <a href="/#">TV Stand</a>
+             <Link to="/ShopPage">Chairs</Link>
+             <Link to="/ShopPage">Temple</Link>
+             <Link to="/ShopPage">TV Stand</Link>
                </div></li>
                <li className="dropdown">
-              <a href="/#">Bedroom</a>
+               <Link to="/ShopPage">Bedroom</Link>
              <div className="dropdown-content">
-                 <a href="/#">Sofas</a>
-                 <a href="/#">Chairs</a>
-                 <a href="/#">Desk</a>
-                 <a href="/#">Bedside table</a>
-                 <a href="/#">Upholstered Beds</a>
-                 <a href="/#">Dressers</a>
+             <Link to="/ShopPage">Sofas</Link>
+             <Link to="/ShopPage">Chairs</Link>
+             <Link to="/ShopPage">Desk</Link>
+             <Link to="/ShopPage">Bedside table</Link>
+             <Link to="/ShopPage">Upholstered Beds</Link>
+             <Link to="/ShopPage">Dressers</Link>
                </div></li>
              <li className="dropdown">
-                <a href="/#">Decor</a>
+             <Link to="/ShopPage">Decor</Link>
                 <div className="dropdown-content">
-                 <a href="/#">Wall Print</a>
-                 <a href="/#">Clock</a>
-                 <a href="/#">Table Lamp</a>
-                 <a href="/#">Rug</a>
-                 <a href="/#">Vase</a>
-                 <a href="/#">Mirror</a>
+                <Link to="/ShopPage">Wall Print</Link>
+                <Link to="/ShopPage">Clock</Link>
+                <Link to="/ShopPage">Table Lamp</Link>
+                <Link to="/ShopPage">Rug</Link>
+                <Link to="/ShopPage">Vase</Link>
+                <Link to="/ShopPage">Mirror</Link>
                </div>
             </li>
            </ul>

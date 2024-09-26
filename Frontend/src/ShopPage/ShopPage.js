@@ -1,20 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ShopPage.css";
 import BestSellerCard from '../Best Seller/BestSellerCard'
+import Bed from "../img/Bed/Bed1.jpg"
+import Sofa1 from "../img/Sofas/sofa.jpg"
+import Sofa2 from "../img/Sofas/sofa2.jpg"
+import Sofa3 from "../img/Sofas/sofa3.jpg"
+import Sofa4 from "../img/Sofas/sofa4.jpg"
+import Sofa5 from "../img/Sofas/sofa5.jpg"
+import Cupboard from "../img/cupboard2.jpg"
 
 export default function ShopPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [category, setCategory] = useState("");
   const [color, setColor] = useState("");
   const [material, setMaterial] = useState("");
-  const [priceRange, setPriceRange] = useState([100, 3000]);
+  const [priceRange, setPriceRange] = useState([100, 20000]);
 
   const products = [
-    { name: "Marble Coffee Table", price: 1400, category: "table", color: "white", material: "marble", image: 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-79.jpg' },
-    { name: "Loren Dinning Chair", price: 550, category: "chair", color: "brown", material: "fabric", image: 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-89.jpg' },
-    { name: "Miruna Floor Lamp", price: 1250, category: "lamp", color: "clear", material: "metal", image: 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-4.jpg' },
-    { name: "Marble Coffee Table", price: 1400, category: "table", color: "white", material: "marble", image: 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-79.jpg' },
-    { name: "Marble Coffee Table", price: 1400, category: "table", color: "white", material: "marble", image: 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-79.jpg' },
-    // Add more products
+    { name: "Bed Design", price: 1400, category: "Bed", color: "white", material: "marble", image: Bed },
+    { name: "White Wooden Wardrobe", price: 5500, category: "wardrobe", color: "White", material: "Wooden", image: Cupboard },
+    { name: "Sofa", price: 1250, category: "Sofa", color: "clear", material: "fabric", image: Sofa1 },
+    { name: "Sofa", price: 1250, category: "Sofa", color: "clear", material: "fabric", image: Sofa2 },
+    { name: "Sofa", price: 1250, category: "Sofa", color: "clear", material: "fabric", image: Sofa3 },
+    { name: "Sofa", price: 1250, category: "Sofa", color: "clear", material: "fabric", image: Sofa4 },
+    { name: "Sofa", price: 1250, category: "Sofa", color: "clear", material: "fabric", image: Sofa5 },
   ];
 
   // Filter the products based on selected filters
@@ -35,9 +46,9 @@ export default function ShopPage() {
           <label htmlFor="category">Category:</label>
           <select id="category" value={category} onChange={(e) => setCategory(e.target.value)}>
             <option value="">All</option>
-            <option value="table">Table</option>
-            <option value="chair">Chair</option>
-            <option value="lamp">Lamp</option>
+            <option value="Bed">Bed</option>
+            <option value="Sofa">Sofa</option>
+            <option value="wardrobe">wardrobe</option>
           </select>
         </div>
 

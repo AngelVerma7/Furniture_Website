@@ -24,21 +24,10 @@ export default class footer extends Component {
             </ul>
             </div>
             <div className='box2'>
-                <h1>Shop</h1>
-                <div className='breakline'></div>
-                <ul>
-               <li><a href='/#'>Living Room</a></li>
-               <li><a href='/#'>Dinning Room</a></li>
-               <li><a href='/#'>Bedroom</a></li>
-               <li><a href='/#'>Lighting</a></li>
-            </ul>
-            </div>
-            <div className='box2'>
                 <h1>Help & Support</h1>
                 <div className='breakline'></div>
                 <ul>
                <li><a href='/#'>Delivery & Return</a></li>
-               <li><a href='/#'>Track Your Order</a></li>
                <li><a href='/#'>Terms & Conditions</a></li>
                 </ul>
             </div>

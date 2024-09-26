@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./ProductPage.css"
 import { Link } from 'react-router-dom';
 
 export default function ProductPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [mainImage, setMainImage] = useState('https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-79.jpg');
   const images = [
     'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-79.jpg', 

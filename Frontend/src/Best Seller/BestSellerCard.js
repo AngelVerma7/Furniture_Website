@@ -14,7 +14,6 @@ export default function BestSellerCard(props) {
         <div className='itemDetails'>
             <div className='ItemInfo'>
                 <div className="BestSelleritemname">{props.itemname}</div>
-                <div className="BestSelleritemInfo">{props.itemInfo}</div>
             </div>
             <div>
                 <div className="BestSellerprice">₹{props.itemprice}</div>

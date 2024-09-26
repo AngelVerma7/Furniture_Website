@@ -1,12 +1,12 @@
 import React from 'react'
-import "../Category/category.css"
 import {Link } from "react-router-dom";
+import "../Category/category.css"
 
 export default function card(props){
   return (
     <>
     <div className='cards'>
-    <Link to="/#">
+    <Link to="/ShopPage">
       <div className="Categoryimg">
       <img src={props.itemimg} alt="...?"/>
       </div>
