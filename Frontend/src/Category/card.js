@@ -6,7 +6,7 @@ export default function card(props){
   return (
     <>
     <div className='cards'>
-    <Link to="/ShopPage">
+    <Link to={`/ShopPage?category=${props.itemname}`}>
       <div className="Categoryimg">
       <img src={props.itemimg} alt="...?"/>
       </div>

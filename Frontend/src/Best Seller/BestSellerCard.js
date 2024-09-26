@@ -6,7 +6,7 @@ export default function BestSellerCard(props) {
   return (
     <>
     <div className='BestSellercards'>
-        <Link to="/ProductPage">
+        <Link to={`/ProductPage?category=${props.itemname}`}>
             <div className="BestSellerimg">
                 <img src={props.itemimg} alt="...?"/>
             </div>

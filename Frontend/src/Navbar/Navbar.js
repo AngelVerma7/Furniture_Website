@@ -20,38 +20,23 @@ export default class Navbar extends Component {
            <li className="dropdown">
            <Link to="/ShopPage">Living Room</Link>
              <div className="dropdown-content">
-             <Link to="/ShopPage">Sofas</Link>
-             <Link to="/ShopPage">Chairs</Link>
-             <Link to="/ShopPage">Tables</Link>
+             <Link to="/ShopPage?category=Sofa">Sofas</Link>
+             <Link to="/ShopPage?category=Temple">Temple</Link>
+             <Link to="/ShopPage?category=TVstand">TV Stand</Link>
                </div></li>
              <li className="dropdown">
              <Link to="/ShopPage">Dinning Room</Link>
              <div className="dropdown-content">
-             <Link to="/ShopPage">Chairs</Link>
-             <Link to="/ShopPage">Temple</Link>
-             <Link to="/ShopPage">TV Stand</Link>
+             <Link to="/ShopPage?category=DinningTable">Dinning Table</Link>
+             <Link to="/ShopPage?category=TVstand">TV Stand</Link>
                </div></li>
                <li className="dropdown">
-               <Link to="/ShopPage">Bedroom</Link>
+               <Link to="/ShopPage?category=Bed">Bedroom</Link>
              <div className="dropdown-content">
-             <Link to="/ShopPage">Sofas</Link>
-             <Link to="/ShopPage">Chairs</Link>
-             <Link to="/ShopPage">Desk</Link>
-             <Link to="/ShopPage">Bedside table</Link>
-             <Link to="/ShopPage">Upholstered Beds</Link>
-             <Link to="/ShopPage">Dressers</Link>
+             <Link to="/ShopPage?category=Sofa">Sofas</Link>
+             <Link to="/ShopPage?category=Bed">Bed</Link>
+             <Link to="/ShopPage?category=wardrobe">Wardrobe</Link>
                </div></li>
-             <li className="dropdown">
-             <Link to="/ShopPage">Decor</Link>
-                <div className="dropdown-content">
-                <Link to="/ShopPage">Wall Print</Link>
-                <Link to="/ShopPage">Clock</Link>
-                <Link to="/ShopPage">Table Lamp</Link>
-                <Link to="/ShopPage">Rug</Link>
-                <Link to="/ShopPage">Vase</Link>
-                <Link to="/ShopPage">Mirror</Link>
-               </div>
-            </li>
            </ul>
          </div>
        </div>

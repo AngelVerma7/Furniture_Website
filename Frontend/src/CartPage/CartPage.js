@@ -1,8 +1,11 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import "./CartPage.css"
 import { Link } from 'react-router-dom';
 
 export default function CartPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
     const [cartItems, setCartItems] = useState([
         { id: 1, name: 'Marble Coffe Table', price: 1400, quantity: 1, image: 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-79.jpg' },
         { id: 2, name: 'Product 2', price: 550, quantity: 1, image: 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-89.jpg' },
