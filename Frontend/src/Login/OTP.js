@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef , useEffect} from 'react'
 import {Link } from "react-router-dom";
 import "../Login/OTP.css"
 
@@ -6,6 +6,9 @@ import "../Login/OTP.css"
 export default function OTP() {
   const [otp, setOTP] = useState(['', '', '', '']);
   const refs = useRef([]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   const handleOTPChange = (event, index) => {
     const { value } = event.target;

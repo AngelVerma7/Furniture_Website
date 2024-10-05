@@ -1,17 +1,19 @@
-import React, {Component} from "react";
+import React, {useEffect} from "react";
 import "./Intro.css";
 import {Link } from "react-router-dom";
 
-export default class Intro extends Component{
-    render(){
+const Intro = () =>{
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
       return(
         <>
         <div className="part1">
           <div className="Intro" id="Intro" >
             <div className="i-left">
               <div className="i-name">
-                <span>New In</span>
-                <span>New in from La Mia Case. Traditional craftmanship.</span>
+                <span>Welcome to Vishwakarma Woodworks.</span>
+                <span>New in from Vishwakarma Woodworks. Traditional craftmanship.</span>
               </div>
                 <Link to="/ShopPage"><button className="button i-button">Shop Product</button></Link> 
             </div>
@@ -20,5 +22,7 @@ export default class Intro extends Component{
     </div>
         </>
         )
-    };
+ 
 };
+
+export default Intro;

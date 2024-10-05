@@ -1,12 +1,12 @@
 .part1{
-  background-image:url(../img/BannerThree.jpg);
-  background-size:cover;
+  background-image:url(../img/Sofas/sofa.jpg);
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: 100%;
+  height: 90vh;
 }
 .Intro {
- /* background-image:url("../img/bannerstart.jpeg");
-  background-image: auto;
-  background-repeat: no-repeat;
-  background-size: cover;*/
   display: flex;
   height: 75vh;
   display: flex;
@@ -30,10 +30,11 @@
 }
 .i-name > :nth-child(1) {
   color: white;
-  font-family: 'Cormorant';
+  /* font-family: 'Cormorant'; */
+  font-family: 'Arial', sans-serif;
   font-style: italic;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 2.5rem;
 }
 .i-name > :nth-child(2) {
   color: white;
@@ -47,45 +48,4 @@
   height: 3rem;
   padding-top: 0%;
   padding-bottom: 0%;
-}
-
-.body3{
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
-  padding: 2px;
-}
-.container3{
-  display: flex;
-  width: 25vw;
-  height: 60vh;
-  background: #ffffff;
-  flex-direction: column;
-  padding: 8px;
-}
-.imgs{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.one{
-  width: 9rem;
-  height: 9rem;
-}
-.one > img{
-  width: 6rem;
-  height: 6rem;
-}
-.one :nth-child(2){
-  text-decoration: none;
-  color: black;
-}
-.container3 > a{
-  text-decoration:none;
-  color: rgb(23, 23, 23);
-  margin-left: 10px;
-  font-size: larger;
 }

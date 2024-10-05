@@ -18,14 +18,14 @@ export default class Navbar extends Component {
          <div className="n-list">
            <ul style={{ listStyleType: "none" }}>
            <li className="dropdown">
-           <Link to="/ShopPage">Living Room</Link>
+           <Link to="/ShopPage?category=Sofa">Living Room</Link>
              <div className="dropdown-content">
              <Link to="/ShopPage?category=Sofa">Sofas</Link>
              <Link to="/ShopPage?category=Temple">Temple</Link>
              <Link to="/ShopPage?category=TVstand">TV Stand</Link>
                </div></li>
              <li className="dropdown">
-             <Link to="/ShopPage">Dinning Room</Link>
+             <Link to="/ShopPage?category=DinningTable">Dinning Room</Link>
              <div className="dropdown-content">
              <Link to="/ShopPage?category=DinningTable">Dinning Table</Link>
              <Link to="/ShopPage?category=TVstand">TV Stand</Link>

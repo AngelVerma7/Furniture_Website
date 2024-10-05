@@ -1,14 +1,16 @@
 import React,{useState, useEffect} from 'react'
 import "./CartPage.css"
 import { Link } from 'react-router-dom';
+import Bed from "../img/Bed/Bed1.jpg"
+import Sofa1 from "../img/Sofas/sofa.jpg"
 
 export default function CartPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
     const [cartItems, setCartItems] = useState([
-        { id: 1, name: 'Marble Coffe Table', price: 1400, quantity: 1, image: 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-79.jpg' },
-        { id: 2, name: 'Product 2', price: 550, quantity: 1, image: 'https://ergocraft.vamtam.com/wp-content/uploads/2024/04/Group-64-Copy-89.jpg' },
+        { id: 1, name: 'Bedroom Bed', price: 1400, quantity: 1, image: Bed},
+        { id: 2, name: 'Designing Sofa', price: 8000, quantity: 1, image: Sofa1 },
       ]);
       const [couponCode, setCouponCode] = useState('');
       const [discount, setDiscount] = useState(0);

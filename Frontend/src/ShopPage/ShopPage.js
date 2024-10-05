@@ -31,17 +31,17 @@ export default function ShopPage() {
       }
     }, [location.search]);
   const products = [
-    { name: "Bed Design", price: 1400, category: "Bed", color: "white", material: "marble", image: Bed },
-    { name: "Wooden Wardrobe", price: 5500, category: "wardrobe", color: "White", material: "Wooden", image: Cupboard },
-    { name: "Sofa", price: 8000, category: "Sofa", color: "clear", material: "fabric", image: Sofa1 },
-    { name: "Bed", price: 1800, category: "Bed", color: "white", material: "marble", image: Bed2 },
-    { name: "Sofa", price: 7500, category: "Sofa", color: "clear", material: "fabric", image: Sofa2 },
-    { name: "Dinning Table", price: 1400, category: "DinningTable", color: "white", material: "Wooden", image: DinningTable1 },
-    { name: "Dinning Table Design", price: 1800, category: "DinningTable", color: "white", material: "Wooden", image: DinningTable2 },
-    { name: "Sofa", price: 8000, category: "Sofa", color: "clear", material: "fabric", image: Sofa3 },
-    { name: "TV Stand", price: 9000, category: "TVstand", color: "clear", material: "fabric", image: TVstand1 },
-    { name: "TV Stand Design", price: 6500, category: "Tvstand", color: "clear", material: "fabric", image: TVstand2 },
-    { name: "Temple Deisgn", price: 1400, category: "Temple", color: "white", material: "marble", image: Temple },
+    {id: 11, name: "Bed Design", price: 1400, category: "Bed", color: "white", material: "marble", image: Bed },
+    {id: 12, name: "Wooden Wardrobe", price: 5500, category: "wardrobe", color: "White", material: "Wooden", image: Cupboard },
+    {id: 13, name: "Sofa", price: 8000, category: "Sofa", color: "clear", material: "fabric", image: Sofa1 },
+    {id: 14, name: "Bed", price: 1800, category: "Bed", color: "white", material: "marble", image: Bed2 },
+    {id: 15, name: "Sofa", price: 7500, category: "Sofa", color: "clear", material: "fabric", image: Sofa2 },
+    {id: 16, name: "Dinning Table", price: 1400, category: "DinningTable", color: "white", material: "Wooden", image: DinningTable1 },
+    {id: 17, name: "Dinning Table Design", price: 1800, category: "DinningTable", color: "white", material: "Wooden", image: DinningTable2 },
+    {id: 18, name: "Sofa", price: 8000, category: "Sofa", color: "clear", material: "fabric", image: Sofa3 },
+    {id: 19, name: "TV Stand", price: 9000, category: "TVstand", color: "clear", material: "fabric", image: TVstand1 },
+    {id: 20, name: "TV Stand Design", price: 6500, category: "Tvstand", color: "clear", material: "fabric", image: TVstand2 },
+    {id: 21, name: "Temple Deisgn", price: 1400, category: "Temple", color: "white", material: "marble", image: Temple },
   ];
 
   const handleCategoryChange = (e) => {
@@ -63,6 +63,12 @@ export default function ShopPage() {
       product.price >= priceRange[0] && product.price <= priceRange[1]
     );
   });
+
+  const handleShopPage = (product) => {
+    const { name, price, image } = product;
+    console.log("Navigating to ProductPage with item:", {name, price, image});
+    navigate(`/ProductPage/${product.id}`, { state: { name, price, image } });
+};
   return (
     <>
     <div className="shop-container">
@@ -118,7 +124,13 @@ export default function ShopPage() {
       <div className="product-section">
         <div className="Product-grid">
           {filteredProducts.map((product, index) => (
-            <BestSellerCard key={index} itemimg= {product.image} itemname={product.name} itemInfo="Solid in Construction,Simple in form" itemprice={product.price}/> 
+            <BestSellerCard 
+            key={index} 
+            itemimg= {product.image} 
+            itemname={product.name} 
+            itemprice={product.price} 
+            OnCardClick={() => handleShopPage(product)}
+            /> 
           ))}
         </div>
       </div>
