@@ -8,8 +8,13 @@ export default function ProductPage(props) {
   }, []);
   const location = useLocation();
   const product = location.state || {};
-  // const { item } = product; 
+  const { item } = product; 
   console.log("ShopPage ",product)
+  console.log("sellerPage ",item)
+  const imageName = item.image;
+  const itemName = item.name;
+  const itemPrice = item.price;
+
 
   if (!product) {
     return <div>Product not found</div>;
@@ -21,16 +26,16 @@ export default function ProductPage(props) {
 <div className="product-container">
       <div className="product-image">
       <img 
-          src={product.image} 
+          src={imageName} 
           alt="Product" 
         />
       </div>
 
       {/* Right Side - Product Details */}
       <div className="product-details">
-        <h2>{product.name || "Product Name"}</h2>
-        <p>{product.name || "Product Name"} at base price and in good quality</p>
-        <h3>₹{product.price || "Price"}</h3>
+        <h2>{itemName || "Product Name"}</h2>
+        <p>{itemName || "Product Name"} at base price and in good quality</p>
+        <h3>₹{itemPrice || "Price"}</h3>
         
         <div className="add-to-cart">
           <div className="quantity-control">

@@ -8,36 +8,36 @@ import Kitchen from "../img/kitchen2.jpg"
 import Door from "../img/door.jpg"
 
 export default function BestSeller() {
-  const [bestSellers, setBestSellers] = useState([
+  const bestSellers = [
     {
       id: 1,
-      itemimg: Cupboard,
-      itemname: 'Wooden Wardrobe',
+      image: Cupboard,
+      name: 'Wooden Wardrobe',
       itemInfo: 'Solid in Construction, Simple in form',
-      itemprice: '8000',
+      price: '8000',
     },
     {
       id: 2,
-      itemimg: TVStand,
-      itemname: 'Wooden TV Stand',
+      image: TVStand,
+      name: 'Wooden TV Stand',
       itemInfo: 'Solid in Construction, Simple in form',
-      itemprice: '7500',
+      price: '7500',
     },
     {
       id: 3,
-      itemimg: Kitchen,
-      itemname: 'Kitchen Interior',
+      image: Kitchen,
+      name: 'Kitchen Interior',
       itemInfo: 'Solid in Construction, Simple in form',
-      itemprice: '15000',
+      price: '15000',
     },
     {
       id: 4,
-      itemimg: Door,
-      itemname: 'Wooden Door Design',
+      image: Door,
+      name: 'Wooden Door Design',
       itemInfo: 'Solid in Construction, Simple in form',
-      itemprice: '8000',
+      price: '8000',
     },
-  ]);
+  ];
   const navigate = useNavigate();
     const handleNavigate = (item) => {
         navigate(`/ProductPage/${item.id}`, { state: { item } });
@@ -52,10 +52,10 @@ export default function BestSeller() {
             {bestSellers.map((item) => (
                 <BestSellerCard
                   key={item.id}
-                  itemimg={item.itemimg}
-                  itemname={item.itemname}
+                  image={item.image}
+                  name={item.name}
                   itemInfo={item.itemInfo}
-                  itemprice={item.itemprice}
+                  price={item.price}
                   OnCardClick={() => handleNavigate(item)}
                 />
       ))}

@@ -65,9 +65,7 @@ export default function ShopPage() {
   });
 
   const handleShopPage = (product) => {
-    const { name, price, image } = product;
-    console.log("Navigating to ProductPage with item:", {name, price, image});
-    navigate(`/ProductPage/${product.id}`, { state: { name, price, image } });
+    navigate(`/ProductPage/${product.id}`, { state: { product} });
 };
   return (
     <>
@@ -126,9 +124,9 @@ export default function ShopPage() {
           {filteredProducts.map((product, index) => (
             <BestSellerCard 
             key={index} 
-            itemimg= {product.image} 
-            itemname={product.name} 
-            itemprice={product.price} 
+            image= {product.image} 
+            name={product.name} 
+            price={product.price} 
             OnCardClick={() => handleShopPage(product)}
             /> 
           ))}
