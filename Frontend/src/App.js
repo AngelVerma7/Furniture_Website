@@ -11,7 +11,6 @@ import ShopPage from './ShopPage/ShopPage.js';
 import ProductPage from './ProductPage/ProductPage.js';
 import CartPage from './CartPage/CartPage.js';
 import { BrowserRouter,Routes, Route } from "react-router-dom";
-//import './App.css';
 
 function App() {
   return (
