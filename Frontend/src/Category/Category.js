@@ -1,12 +1,12 @@
 import React,{Component} from 'react'
 import "../Category/category.css"
 import Card from "./card";
-import TVstand from "../img/TVstand1.jpg"
-import Bed from "../img/Bed/Bed1.jpg"
-import Sofa from "../img/Sofas/sofa.jpg"
-import DinningTable from "../img/dinningtable.jpg"
-import Temple from "../img/temple.jpg"
-import Wardrobe from "../img/cupboard2.jpg"
+import TVstand from "../img/tvstand/TVstand1.webp"
+import Bed from "../img/Bed/Bed1.webp"
+import Sofa from "../img/Sofas/sofa1.webp"
+import DinningTable from "../img/dinningtable/dinningtable1.webp"
+import Temple from "../img/temple/temple1.webp"
+import Wardrobe from "../img/cupboard/cupboard1.webp"
 
 
 export default class Category extends Component {

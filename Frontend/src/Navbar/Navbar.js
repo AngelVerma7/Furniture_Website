@@ -1,16 +1,18 @@
 // import React from "react";
 import "../index.css";
 import '../Navbar/topheader.css';
-import {Link } from "react-router-dom";
-import React, { Component } from 'react'
-import user from "../img/User.png"
-import Logo from "../img/Ecomm-Logo.jpg"
-import cart from "../img/cart.png"
+import {Link, useLocation } from "react-router-dom";
+import React,{useState} from 'react'
+import user from "../img/User.webp"
+import Logo from "../img/Ecomm-Logo.webp"
+import cart from "../img/cart.webp"
 
-export default class Navbar extends Component {
-  render() {
+export default function Navbar(){
+  const [query, setQuery] = useState("");
+  const location = useLocation();
+  const product = location.state || {};
+  // console.log("some",product)
     return (<>
-
     <div className="n-wrapper" id="Navbar">
        {/* left */}
        <div className="n-left">
@@ -45,7 +47,7 @@ export default class Navbar extends Component {
        <div className="n-right">
        <div className="search-box">
           <form action="/#" method="get">
-              <input type="text" placeholder="Search for products..."/>
+              <input onChange={e => setQuery(e.target.value)} type="text" placeholder="Search for products..."/>
           </form>
         </div>
         
@@ -63,5 +65,4 @@ export default class Navbar extends Component {
      </>
         
     )
-  }
 }

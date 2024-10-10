@@ -1,7 +1,8 @@
 import React from 'react'
-import Navbar from "./Navbar/Navbar.js"
+import Navbar from "../src/Navbar/Navbar.js"
 import Intro from "./Intro/Intro.js";
 import LogIn from "./Login/LogIn.js";
+import { CartProvider } from './CartPage/CartContext.js';
 import SignUp from "./Login/signup.js";
 import OTP from "./Login/OTP.js";
 import BestSeller from "./Best Seller/BestSeller.js";
@@ -15,6 +16,7 @@ import { BrowserRouter,Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
+    <CartProvider>
     <BrowserRouter>
     <Navbar/>
       <Routes>
@@ -54,8 +56,10 @@ function App() {
       <Routes>
         <Route path="/Home" element={<BestSeller/>}></Route>
       </Routes>
+      <Footer/>
     </BrowserRouter>
-    <Footer/>
+    </CartProvider>
+    
     </>
   );
 }

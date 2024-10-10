@@ -16,20 +16,16 @@ export default class footer extends Component {
                 <h1>Meet Us</h1>
                 <div className='breakline'></div>
                 <ul>
-               <li><a href='/#'>Call US: 123456789</a></li>
-               <li><a href='/#'>Mail US: support@XYZ.com</a></li>
-               <li><a href='/#'>Instagram</a></li>
-               <li><a href='/#'>Facebook</a></li>
-               <li><a href='/#'>Twitter</a></li>
+                <li>Mr. Tarsem Singh</li>
+               <li><a href='tel:+9855104649'>Call US: +91 98551 04649</a></li>
+               <li><a href='https://www.instagram.com/vww3233/' target="_blank" rel="noopener noreferrer">Instagram</a></li>
+               <li><a href='https://www.facebook.com/profile.php?id=100063855797319' target="_blank" rel="noopener noreferrer">Facebook</a></li>
             </ul>
             </div>
             <div className='box2'>
-                <h1>Help & Support</h1>
+                <h1>Address</h1>
                 <div className='breakline'></div>
-                <ul>
-               <li><a href='/#'>Delivery & Return</a></li>
-               <li><a href='/#'>Terms & Conditions</a></li>
-                </ul>
+                <p>Shop no 32 chungiyan Road Kharar, Kharar, India, 140301</p>
             </div>
             </div>
             </footer>

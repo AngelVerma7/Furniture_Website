@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import "../Best Seller/BestSeller.css"
 import BestSellerCard from './BestSellerCard'
-import Cupboard from "../img/cupboard3.jpg"
-import TVStand from "../img/TVstand3.jpg"
-import Kitchen from "../img/kitchen2.jpg"
-import Door from "../img/door.jpg"
+import Cupboard from "../img/cupboard/cupboard3.webp"
+import TVStand from "../img/tvstand/TVstand3.webp"
+import Kitchen from "../img/kitchen/kitchen2.webp"
+import Door from "../img/door/door1.webp"
 
 export default function BestSeller() {
   const bestSellers = [
@@ -39,8 +39,8 @@ export default function BestSeller() {
     },
   ];
   const navigate = useNavigate();
-    const handleNavigate = (item) => {
-        navigate(`/ProductPage/${item.id}`, { state: { item } });
+    const handleNavigate = (product) => {
+        navigate(`/ProductPage/${product.id}`, { state: { product } });
     };
   return (
     <>
@@ -49,14 +49,14 @@ export default function BestSeller() {
                 <div className="i2-name">Best Seller</div>
             </div>
             <div className="BestSellercontents">
-            {bestSellers.map((item) => (
+            {bestSellers.map((product) => (
                 <BestSellerCard
-                  key={item.id}
-                  image={item.image}
-                  name={item.name}
-                  itemInfo={item.itemInfo}
-                  price={item.price}
-                  OnCardClick={() => handleNavigate(item)}
+                  key={product.id}
+                  image={product.image}
+                  name={product.name}
+                  itemInfo={product.itemInfo}
+                  price={product.price}
+                  OnCardClick={() => handleNavigate(product)}
                 />
       ))}
             </div>
