@@ -1,17 +1,51 @@
 // import React from "react";
 import "../index.css";
 import '../Navbar/topheader.css';
-import {Link, useLocation } from "react-router-dom";
-import React,{useState} from 'react'
+import {Link} from "react-router-dom";
+import React,{useState, useEffect} from 'react'
 import user from "../img/User.webp"
 import Logo from "../img/Ecomm-Logo.webp"
 import cart from "../img/cart.webp"
 
 export default function Navbar(){
   const [query, setQuery] = useState("");
-  const location = useLocation();
-  const product = location.state || {};
-  // console.log("some",product)
+  const [suggestions, setSuggestions] = useState([]);
+  const products = [
+    { id: 1, name: 'Sofa', category: 'Living Room' },
+    { id: 2, name: 'Ceiling louver', category: 'Living Room' },
+    { id: 3, name: 'door', category: 'Living Room' },
+    { id: 4, name: 'Bed', category: 'Living Room' },
+    { id: 4, name: 'Kitchen', category: 'Living Room' },
+    { id: 4, name: 'TVstand', category: 'Living Room' },
+    { id: 4, name: 'wardrobe', category: 'Living Room' },
+    { id: 5, name: 'Temple', category: 'Living Room' },
+    { id: 6, name: 'DinningTable', category: 'Dining' },
+  ];
+  useEffect(() => {
+    if (query) {
+      const filteredSuggestions = products.filter(product =>
+        product.name.toLowerCase().includes(query.toLowerCase())
+      );
+      setSuggestions(filteredSuggestions);
+    } else {
+      setSuggestions([]);
+    }
+  }, [query]);
+
+  const handleSearch = () => {
+    setQuery('');
+    setSuggestions([]);
+  };
+
+  const handleFormsubmit = (event) => {
+    event.preventDefault();
+    console.log(`Search term: ${query}`);
+    window.location.href = `/ShopPage?category=${query}`;
+    setQuery('');
+    setSuggestions([]);
+  }
+  
+  console.log("some",query)
     return (<>
     <div className="n-wrapper" id="Navbar">
        {/* left */}
@@ -46,9 +80,18 @@ export default function Navbar(){
 
        <div className="n-right">
        <div className="search-box">
-          <form action="/#" method="get">
-              <input onChange={e => setQuery(e.target.value)} type="text" placeholder="Search for products..."/>
+          <form onSubmit={handleFormsubmit} method="get">
+              <input onChange={e => setQuery(e.target.value)} type="text" value={query} placeholder="Search for products..."/>
           </form>
+          <ul>
+        {suggestions.map((product) => (
+          <Link to={`/ShopPage?category=${product.name}`}>
+          <li key={product.id} onClick={() => handleSearch(product.name)}>
+            {product.name}
+          </li>
+          </Link>
+        ))}
+      </ul>
         </div>
         
          <div className="nav-button"> 

@@ -5,7 +5,7 @@ import BestSellerCard from '../Best Seller/BestSellerCard'
 import Bed1 from "../img/Bed/Bed1.webp"
 import Bed2 from "../img/Bed/Bed2.webp"
 import Temple from "../img/temple/temple1.webp"
-import ceilingfan from "../img/ceilingfan/ceilingfan1.webp"
+import ceilinglouver from "../img/ceilinglouver/ceilinglouver.webp"
 import door1 from "../img/door/door1.webp"
 import door2 from "../img/door/door2.webp"
 import Kitchen1 from "../img/kitchen/kitchen1.webp"
@@ -55,7 +55,7 @@ export default function ShopPage() {
     {id: 8, name: "Sofa", price: 8000, category: "Sofa", color: "clear", material: "fabric", image: Sofa3 },
     {id: 9, name: "TV Stand", price: 9000, category: "TVstand", color: "clear", material: "fabric", image: TVstand1 },
     {id: 10, name: "TV Stand Design", price: 6500, category: "Tvstand", color: "clear", material: "fabric", image: TVstand2 },
-    {id: 11, name: "Ceiling Fan", price: 1500, category: "Fan", color: "white", material: "marble", image: ceilingfan },
+    {id: 11, name: "Ceiling louver", price: 1500, category: "Ceiling louver", color: "white", material: "marble", image: ceilinglouver },
     {id: 12, name: "Door Design", price: 800, category: "door", color: "white", material: "marble", image: door1 },
     {id: 13, name: "Entrance Door", price: 1800, category: "door", color: "white", material: "marble", image: door2 },
     {id: 14, name: "Kitchen Design", price: 10000, category: "Kitchen", color: "white", material: "marble", image: Kitchen1 },
@@ -104,7 +104,7 @@ export default function ShopPage() {
           <select id="category" value={category} onChange={handleCategoryChange}>
             <option value="">All</option>
             <option value="Bed">Bed</option>
-            <option value="Fan">Fan</option>
+            <option value="Ceiling louver">Ceiling louver</option>
             <option value="door">Door</option>
             <option value="Kitchen">Kitchen</option>
             <option value="Sofa">Sofa</option>

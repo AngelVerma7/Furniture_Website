@@ -1,6 +1,8 @@
 .search-box {
    display: flex;
+   flex-direction: column;
    justify-content: center;
+   position: relative;
    align-items: center;
    margin-right: 1rem;
 }
@@ -10,14 +12,6 @@
   /* border: 1px solid black; */
   margin-left: 1rem;
   height: 4rem;
-}
-.search-box> form> button{
-  padding: 1px;
-}
-.search-box> form> button> img{
-  width: 40px;
-  height: 36px;
-  padding: 0%;
 }
 .search-box > :nth-child(3) {
   width: 40px;
@@ -47,16 +41,31 @@
    border: 1px solid black;
 }
 
-.search-box form button[type="submit"] {
-   background-color: #393939;
-   border: none;
-   border-radius: 5px;
-   cursor: pointer;
-   transition: background-color 0.3s ease-in-out;
+.search-box ul {
+  min-width: 100%;
+  position: absolute;
+  top: 3rem;
+  background-color: white; 
+  /* border: 1px solid #ccc;  */
+  z-index: 10;
+  width: 100%;
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+  max-height: 200px; 
+  overflow-y: auto;
+}
+.search-box ul a{
+  text-decoration: none;
+}
+.search-box li {
+  padding: 8px;
+  color: black;
+  cursor: pointer; 
 }
 
-.search-box form button[type="submit"]:hover {
-   background-color: #393939;
+.search-box li:hover {
+  background-color: #f0f0f0;
 }
 .n-button3 > :nth-child(1) {
   width: 40px;
@@ -76,4 +85,7 @@
   background:transparent ;
   cursor: pointer;
   border: none;
+}
+ul{
+  cursor: pointer;
 }

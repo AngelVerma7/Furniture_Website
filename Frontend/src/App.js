@@ -11,14 +11,14 @@ import Footer from "./footer/footer.js"
 import ShopPage from './ShopPage/ShopPage.js';
 import ProductPage from './ProductPage/ProductPage.js';
 import CartPage from './CartPage/CartPage.js';
-import { BrowserRouter,Routes, Route } from "react-router-dom";
+import { BrowserRouter,Routes, Route} from "react-router-dom";
 
 function App() {
   return (
     <>
     <CartProvider>
     <BrowserRouter>
-    <Navbar/>
+    <Navbar />
       <Routes>
         <Route path="/login" element={<LogIn/>}></Route>
       </Routes>
